@@ -106,6 +106,7 @@ mark {
 
 		h2.alt {
 			color: #888;
+			text-shadow: 1px 1px black;
 		}
 
 			h2.alt strong {
@@ -122,6 +123,7 @@ mark {
 
 		header > p {
 			margin: 1em 0 0 0;
+			text-shadow: 1px 1px black;
 		}
 
 	footer {
@@ -187,6 +189,7 @@ mark {
 /* Container */
 
 	.container {
+		position: relative;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
@@ -1715,6 +1718,9 @@ mark {
 		.row > section, .row > article {
 			margin-bottom: 0;
 		}
+		section#top{
+			position: relative;
+		}
 
 /* Image */
 
@@ -1863,7 +1869,7 @@ mark {
 	}
 
 	.button.second{
-		background-color: #39807C;
+		background-color: rgb(62, 163, 158);
 		margin: 0.5em 0;
 		font-size: 0.7em;
 		padding: 0.35em 1.5em 0.35em 1.5em;
@@ -1874,7 +1880,7 @@ mark {
 			background-color: #9ececc;
 		}
 		.button.second:hover{
-			background-color: rgb(74, 165, 160);
+			background-color: rgb(92, 212, 206);
 		}
 
 		button:active,
@@ -2156,7 +2162,7 @@ mark {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/newImages/banner.jpg");
 			}
 
 			#main > section.two {
