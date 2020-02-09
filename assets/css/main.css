@@ -1,12 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1794,7 +1788,7 @@ input, select, textarea {
 /* List */
 
 	ul {
-		list-style: disc;
+		/* list-style: disc; */
 		padding-left: 1em;
 	}
 
@@ -1941,7 +1935,8 @@ input, select, textarea {
 	input[type="submit"],
 	input[type="reset"],
 	button,
-	.button {
+	.button,
+	.second {
 		position: relative;
 		display: inline-block;
 		border-radius: 0.35em;
@@ -1961,12 +1956,22 @@ input, select, textarea {
 		transition: background-color 0.35s ease-in-out;
 	}
 
+	.button.second{
+		background-color: #39807C;
+		margin: 0.5em 0;
+		font-size: 0.7em;
+		padding: 0.35em 1.5em 0.35em 1.5em;
+	}
+
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
 			background-color: #9ececc;
+		}
+		.button.second:hover{
+			background-color: rgb(74, 165, 160);
 		}
 
 		input[type="button"]:active,
@@ -1975,6 +1980,9 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: #7eaeac;
+		}
+		.button.second:active{
+			background-color: rgb(42, 94, 91);
 		}
 
 /* Item */
@@ -2241,7 +2249,7 @@ input, select, textarea {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 4em 0;
 				background-size: cover;
 				background-position: center center;
 			}
