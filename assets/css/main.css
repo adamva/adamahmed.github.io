@@ -1718,9 +1718,6 @@ mark {
 		.row > section, .row > article {
 			margin-bottom: 0;
 		}
-		section#top{
-			position: relative;
-		}
 
 /* Image */
 
