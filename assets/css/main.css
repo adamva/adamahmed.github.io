@@ -151,7 +151,7 @@ mark {
 	}
 
 		a:hover {
-			color: #90BDF1;
+			color: #95C3C1;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1874,7 +1874,7 @@ mark {
 
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #95C3C1;
 		}
 		.button.second:hover{
 			background-color: rgb(92, 212, 206);
@@ -1957,7 +1957,7 @@ mark {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: #222629 url("images/banner.jpg");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2002,7 +2002,7 @@ mark {
 			}
 
 				#header .icons a:hover {
-					color: rgb(144, 189, 241);
+					color: #95C3C1;
 				}
 
 	#logo {
@@ -2080,7 +2080,7 @@ mark {
 				}
 
 					#nav ul li a.active span:before {
-						color: #B3D9FF;
+						color: #95C3C1;
 					}
 
 /* Footer */
