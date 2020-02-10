@@ -10,9 +10,16 @@
 			html, body, .container-fluid, .row, .d-flex, .col{
 				height: 100%;
 			}
+			div{
+				display: inline-block;
+			}
+			footer{
+				background-color: khaki;
+			}
 
 			#sidebar{
 				background-color: aquamarine;
+				color: white;
 			}
 
 			#content{
@@ -22,8 +29,28 @@
 				background-color: lawngreen;
 				flex-direction: column;
 			}
-			.d-flex > div > footer{
-				background-color: khaki;
+			.d-flex > header{
+				text-align: end;
+				background-color: rebeccapurple;
+			}
+			.d-flex > ul{
+				list-style: none;
+				padding: 0;
+				text-align: end;
+				background-color: red;
+			}
+			.d-flex > ul li:nth-child(2n){
+				background-color: blue;
+			}
+			.d-flex > footer{
+				margin-top: auto;
+				margin-bottom: 10rem;
+			}
+			footer > #icons{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				width: 100%;
 			}
 		</style>
 	</head>
@@ -31,20 +58,26 @@
 		<div class="container-fluid">
 			<div class="row">
 				<!-- Sidebar -->
-				<div id="sidebar" class="col">
+				<div id="sidebar" class="col-2">
 					<div class="d-flex">
-						<header>Header</header>
-						<div>
-							<ul>
-								<li>Link1</li>
-								<li>Link1</li>
-								<li>Link1</li>
-								<li>Link1</li>
-							</ul>
-						</div>
-						<div>
-							<footer>Footer</footer>
-						</div>						
+						<header>
+							<i class="fas fa-user-circle"></i>
+							Header
+						</header>
+						<ul>
+							<li><i class="fas fa-home"></i>Link1</li>
+							<li><i class="fas fa-user"></i> Link1</li>
+							<li><i class="fas fa-th-large"></i>Link1</li>
+							<li><i class="fas fa-envelope"></i>Link1</li>
+						</ul>
+						<hr>
+						<footer>
+							<div id="icons">
+								<i class="fab fa-github fa-3x"></i>
+								<i class="fab fa-linkedin fa-3x"></i>
+								<i class="fas fa-envelope fa-3x"></i>
+							</div>					
+						</footer>					
 					</div>					
 				</div>
 					
@@ -52,7 +85,7 @@
 
 
 				<!-- Content -->
-				<div id="content" class="col">
+				<div id="content" class="col-10">
 					<!-- Intro -->
 					<!-- Portfolio -->
 					<!-- About -->
@@ -83,6 +116,7 @@
 		<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
 		<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+		<script src="https://kit.fontawesome.com/f005ebedaf.js" crossorigin="anonymous"></script>
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
