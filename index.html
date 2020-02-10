@@ -7,50 +7,60 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			html, body, .container-fluid, .row, .d-flex, .col{
+			html, body, .container-fluid{
 				height: 100%;
 			}
 			div, h4{
 				display: inline-block;
 			}
-			header{
-				overflow-x: hidden;
-			}
 			footer{
 				background-color: khaki;
 			}
-
+			a{
+				color:inherit
+			}
+			a:hover{
+				color: inherit;
+				text-decoration: none;
+			}
+			/* sidebar */
 			#sidebar{
 				background-color: aquamarine;
 				color: white;
+				padding: 0;
 			}
 
-			#content{
-				background-color: pink;
-			}
-			#sidebar > .d-flex{
+			#sidebar-nav{
+				position: sticky;
+				position: -webkit-sticky;
+				top: 0;
+				height: 100vh;
 				background-color: lawngreen;
 				flex-direction: column;
 			}
-			.d-flex > header{
+
+			#sidebar-nav > header{
 				text-align: end;
 				background-color: rebeccapurple;
 			}
-			.d-flex > ul{
+			#links{
+				margin: 5rem 0;
+			}
+			#links > ul{
 				list-style: none;
 				padding: 0;
 				text-align: end;
 				background-color: red;
 			}
-			.d-flex > ul > li{
+			#links > ul > li{
 				height: 5rem;
 			}
-			.d-flex > ul li:nth-child(2n){
+			#links > ul li:nth-child(2n){
 				background-color: blue;
 			}
-			.d-flex > footer{
+			#sidebar-nav > footer{
 				margin-top: auto;
-				margin-bottom: 10rem;
+				margin-bottom: 5vh;
 			}
 			footer > #icons{
 				display: flex;
@@ -61,6 +71,10 @@
 			#icons{
 				font-size: 3rem;
 			}
+
+			#content{
+				background-color: pink;
+			}
 		</style>
 	</head>
 	<body>
@@ -68,18 +82,19 @@
 			<div class="row">
 				<!-- Sidebar -->
 				<div id="sidebar" class="col-5 col-md-3 col-lg-2">
-					<div class="d-flex">
+					<div id="sidebar-nav" class="d-flex">
 						<header>
 							<i class="fas fa-user-circle"></i>
 							<h4>Header</h4>
 						</header>
-						<hr>
-						<ul>
-							<li><i class="fas fa-home"></i>Link1</li>
-							<li><i class="fas fa-user"></i> Link1</li>
-							<li><i class="fas fa-th-large"></i>Link1</li>
-							<li><i class="fas fa-envelope"></i>Link1</li>
-						</ul>
+						<div id="links">
+							<ul>
+								<li><i class="fas fa-home"></i><a href="">Link</a></li>
+								<li><i class="fas fa-user"></i><a href="">Link</a></li>
+								<li><i class="fas fa-th-large"></i><a href="">Link</a></li>
+								<li><i class="fas fa-envelope"></i><a href="">Link</a></li>
+							</ul>
+						</div>						
 						<hr>
 						<footer>
 							<div id="icons">
@@ -97,10 +112,37 @@
 				<!-- Content -->
 				<div id="content" class="col-7 col-md-9 col-lg-10">
 					<!-- Intro -->
+					<section id="intro" class="row">
+						<h2>Section</h2>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+					</section>
 					<!-- Portfolio -->
+					<div class="row">
+						<h2>Section</h2>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+					</div>
 					<!-- About -->
+					<div class="row">
+						<h2>Section</h2>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+					</div>
 					<!-- Contact -->
+					<div class="row">
+						<h2>Section</h2>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+					</div>
 					<!-- Footer -->
+					<div class="row">
+						<h2>Section</h2>
+						<p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo ex, sit amet hendrerit risus. Aenean at elementum dui. Nullam pellentesque leo sed gravida placerat. Curabitur dapibus gravida nulla, sit amet aliquam turpis placerat id. Aliquam vehicula ex lacus, eget finibus justo bibendum vel. Donec auctor cursus justo eget placerat. Donec sit amet commodo neque, ut sollicitudin eros. Morbi nec arcu sagittis, dapibus justo id, fermentum neque. Sed mi ipsum, luctus ac ultricies dictum, ultrices at turpis. Nam aliquet lobortis hendrerit. Vivamus volutpat massa ac nisl dictum porttitor.'</p>
+					</div>
 				</div>
 			</div>
 		</div>
