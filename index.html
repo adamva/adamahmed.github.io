@@ -4,165 +4,85 @@
 		<title>Portfolio for Adam A</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			html, body, .container-fluid, .row, .d-flex, .col{
+				height: 100%;
+			}
+
+			#sidebar{
+				background-color: aquamarine;
+			}
+
+			#content{
+				background-color: pink;
+			}
+			#sidebar > .d-flex{
+				background-color: lawngreen;
+				flex-direction: column;
+			}
+			.d-flex > div > footer{
+				background-color: khaki;
+			}
+		</style>
 	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-			<div id="header">
-
-				<div class="top">
-
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/newImages/avatar.jpg" alt="" /></span>
-							<h1 id="title">Adam Ahmed</h1>
-							<p>University Student</p>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Sidebar -->
+				<div id="sidebar" class="col">
+					<div class="d-flex">
+						<header>Header</header>
+						<div>
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+								<li>Link1</li>
+								<li>Link1</li>
+								<li>Link1</li>
+								<li>Link1</li>
 							</ul>
-						</nav>
-
+						</div>
+						<div>
+							<footer>Footer</footer>
+						</div>						
+					</div>					
 				</div>
+					
 
-				<div class="bottom">
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://github.com/adamva" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/adam-ahmed/" class="icon brands fab fa-linkedin fa-2x"><span class="label">Linkedin</span></a></li>
-							<li><a href="mailto:adamva@outlook.com" class="icon solid fa-envelope fa-2x"><span class="label">Email</span></a></li>
-						</ul>
 
+				<!-- Content -->
+				<div id="content" class="col">
+					<!-- Intro -->
+					<!-- Portfolio -->
+					<!-- About -->
+					<!-- Contact -->
+					<!-- Footer -->
 				</div>
-
 			</div>
+		</div>
+		
 
-		<!-- Main -->
-			<div id="main">
+		
+		
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Adam Ahmed</strong> a student of University of Alberta.</h2>
-								<p>I am an aspiring developer looking to learn new skills and jumpstart my career. <br / > This site is to showcase the work I have done and my projects.</p>
-							</header>
 
-							<hr>
 
-							<footer>
-								<ul>
-									<li><a href="#portfolio" class="button scrolly">Check Out My Work</a></li>
-									<li><a href="./assets/resume/AdamAhmedResume.pdf" class="button second">View Resume</a></li>
-								</ul>								
-							</footer>							
-						</div>
-					</section>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
 
-							<header>
-								<h2>Portfolio</h2>
-							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
 
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Project 1</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Project 2</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Project 3</h3>
-										</header>
-									</article>
-								</div>
-							</div>
 
-						</div>
-					</section>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
 
-							<header>
-								<h2>About Me</h2>
-							</header>
 
-							<a href="#" class="image featured"><img src="images/newImages/about.jpg" alt="" /></a>
 
-							<p>I am an avid gamer and have been playing video-games my whole life. I have played games from <em>Call of Duty</em>, <em>Wither 3: Wild Hunt</em>, <em>Super Mario Odyssey</em>, to <em>Stardew Valley</em>. By far my favourite game is <em>Destiny</em>created by Bungie. I have owned a cat, named Milo, for almost 4 years now and he is the greatest furball you will ever meet.</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-							<p>adamva@outlook.com</p>
-							<ul class="icons">
-								<li><a href="https://github.com/adamva" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></li>
-								<li><a href="https://github.com/adamva" class="icon brands fa-linkedin fa-2x"><span class="label">Linkedin</span></a></li>
-								<li><a href="mailto:adamva@outlook.com" class="icon solid fa-envelope fa-2x"><span class="label">Email</span></a></li>
-							</ul>							
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>Adam Ahmed</li>
-					</ul>
-
-			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
+		<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
