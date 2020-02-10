@@ -10,8 +10,11 @@
 			html, body, .container-fluid, .row, .d-flex, .col{
 				height: 100%;
 			}
-			div{
+			div, h4{
 				display: inline-block;
+			}
+			header{
+				overflow-x: hidden;
 			}
 			footer{
 				background-color: khaki;
@@ -39,6 +42,9 @@
 				text-align: end;
 				background-color: red;
 			}
+			.d-flex > ul > li{
+				height: 5rem;
+			}
 			.d-flex > ul li:nth-child(2n){
 				background-color: blue;
 			}
@@ -52,18 +58,22 @@
 				justify-content: space-around;
 				width: 100%;
 			}
+			#icons{
+				font-size: 3rem;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div class="row">
 				<!-- Sidebar -->
-				<div id="sidebar" class="col-2">
+				<div id="sidebar" class="col-5 col-md-3 col-lg-2">
 					<div class="d-flex">
 						<header>
 							<i class="fas fa-user-circle"></i>
-							Header
+							<h4>Header</h4>
 						</header>
+						<hr>
 						<ul>
 							<li><i class="fas fa-home"></i>Link1</li>
 							<li><i class="fas fa-user"></i> Link1</li>
@@ -73,9 +83,9 @@
 						<hr>
 						<footer>
 							<div id="icons">
-								<i class="fab fa-github fa-3x"></i>
-								<i class="fab fa-linkedin fa-3x"></i>
-								<i class="fas fa-envelope fa-3x"></i>
+								<i class="fab fa-github"></i>
+								<i class="fab fa-linkedin"></i>
+								<i class="fas fa-envelope"></i>
 							</div>					
 						</footer>					
 					</div>					
@@ -85,7 +95,7 @@
 
 
 				<!-- Content -->
-				<div id="content" class="col-10">
+				<div id="content" class="col-7 col-md-9 col-lg-10">
 					<!-- Intro -->
 					<!-- Portfolio -->
 					<!-- About -->
