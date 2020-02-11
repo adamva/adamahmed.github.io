@@ -1,129 +1,110 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Portfolio for Adam A</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/css/main.css" />
+<!doctype html>
+<html lang='en'>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
-	</head>
-	<style>
-	</style>
-	<body>
-		<div class="container-fluid">
-			<div class="row">
-				<!-- Sidebar -->
-				<div id="sidebar" class="col-5 col-sm-4 col-md-3 col-lg-2">
-					<div id="sidebar-nav" class="d-flex">
-						<header>
-							<div class="sidebar-item">
-								<i class="fas fa-user-circle"></i>
-								<h4>Header</h4>
-							</div>							
-						</header>
-						<ul class="links">
-							<li>
-								<a id="intro-link" class="link link-selected" href="#intro">
-									<div class="sidebar-item">
-										<i class="fas fa-home"></i>
-										<h5>Link</h5>
-									</div>
-								</a>																	
-							</li>
-							<li>
-								<a id="portfolio-link" class="link" href="#portfolio">
-									<div class="sidebar-item">
-										<i class="fas fa-th-large"></i>
-										<h5>Link</h5>
-									</div>
-								</a>									
-							</li>
-							<li>
-								<a id="about-link" class="link" href="#about">
-									<div class="sidebar-item">
-										<i class="fas fa-user"></i>
-										<h5>Link</h5>
-									</div>
-								</a>									
-							</li>
-							<li>
-								<a id="contact-link" class="link" href="#contact">
-									<div class="sidebar-item">
-										<i class="fas fa-envelope"></i>
-										<h5>Link</h5>
-									</div>
-								</a>									
-							</li>
-						</ul>
-						<footer>
-							<div id="icons">
-								<i class="fab fa-github"></i>
-								<i class="fab fa-linkedin"></i>
-								<i class="fas fa-envelope"></i>
-							</div>					
-						</footer>					
-					</div>
-				</div>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
 
+        <!-- Scrollbar Custom CSS -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"> -->
 
-				<!-- Content -->
-				<div id="content" class="col-7 col-sm-8 col-md-9 col-lg-10">
-					<!-- Sidebar Toggle Button -->
-					<a class="btn" id="toggle-sidebar">
-						<span><i class="fas fa-bars"></i></span>
-					</a>
-					<!-- Intro -->
-					<section id="intro" class="row">
-						<h2>Section</h2>
-						<div style="background-color: teal;" class="spacer"></div>
-					</section>
-					<!-- Portfolio -->
-					<section id="portfolio" class="row">
-						<h2>Section</h2>
-						<div style="background-color: rgb(29, 172, 41);" class="spacer"></div>
-					</section>
-					<!-- About -->
-					<section id="about" class="row">
-						<h2>Section</h2>
-						<div style="background-color: rgb(48, 15, 236);" class="spacer"></div>
-					</section>
-					<!-- Contact -->
-					<section id="contact" class="row">
-						<h2>Section</h2>
-						<div style="background-color: rgb(180, 17, 85);" class="spacer"></div>
-					</section>
-					<!-- Footer -->
-					<section class="row">
-						<h2>Section</h2>
-						<div style="background-color: rgb(230, 196, 47);" class="spacer"></div>
-					</section>
-				</div>
-			</div>
-		</div>
-		
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <title>Adam A Portfolio</title>
+    </head>
+        <body>
+            <div class="wrapper">
+                <!-- Sidebar -->
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h3>Adam A Sidebar</h3>
+                    </div>
 
-		
-		
+                    <ul class="list-unstyled components">
+                        <p>Heading</p>
+                        <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Home</a>
+                            <ul class="collapse show list-unstyled" id="homeSubmenu">
+                                <li>
+                                    <a href="#">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Pages</a>
+                            <ul class="collapse show list-unstyled" id="pageSubmenu">
+                                <li>
+                                    <a href="#">Link 4</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 5</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 6</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Page Content -->
+                <div id="content">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+
+                            <button id="sidebarCollapse" class="toggler">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                        </div>
+                    </nav>
+                    <div class="spacer">
+                        <h3>Section</h3>
+                    </div>
+                    <div class="spacer">
+                        <h3>Section</h3>
+                    </div>
+                    <div class="spacer">
+                        <h3>Section</h3>
+                    </div>
+                    <div class="spacer">
+                        <h3>Section</h3>
+                    </div>
+                </div>
+            </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-		<!-- Scripts -->
-		<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
-		<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
-		<script src="https://kit.fontawesome.com/f005ebedaf.js" crossorigin="anonymous"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
-</html>
+            
+            <!-- Optional JavaScript -->
+            <!-- jQuery -->
+            <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+            <!-- Popper.js -->
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
+            <!-- Bootstrap JS -->
+            <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+            <!-- jQuery Custom Scroller CDN -->
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script> -->
+            <!-- Font Awesome -->
+            <script src="https://kit.fontawesome.com/f005ebedaf.js" crossorigin="anonymous"></script>
+		    <script src="assets/js/main.js"></script>
+        </body>
+    </html>
