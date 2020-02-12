@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,600&display=swap');
 
 /* Basic */
 
@@ -148,10 +148,37 @@ button.toggler{
 #content{
     width: 100%;
 }
+
+section{
+    background-image: linear-gradient(to bottom, rgb(238, 238, 238), rgb(223, 223, 223));
+    color: rgb(139, 139, 139);
+    height: fit-content;
+}
+
+section header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+}
+
+section header .heading{
+    margin-top: auto;
+    margin-bottom: 3rem;
+}
+section header .tag{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: auto;
+}
+
+/* Section Intro */
 section#intro .jumbotron{
     background: #31A7A0;
     background: linear-gradient(to left, #31A7A0, #bdfff3);
     color: white;
+    margin: 0;
 }
 
 section#intro .container.header{
@@ -162,11 +189,11 @@ section#intro .container.header{
     text-shadow: rgba(34, 38, 41, 0.349) 1px 1px;
     font-size: 1.7rem;
 }
-.container.header h1{
+section#intro .container.header h1{
     font-size: 3rem;
 }
 
-.container.header hr{
+section#intro .container.header hr{
     width: 60%;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgb(255, 255, 255), rgba(255, 255, 255, 0.3));
 }
@@ -194,7 +221,10 @@ section#intro footer .main{
     width: 14rem;
     text-align: center;
 }
-section#intro footer .sub{
+
+/* Section Portfolio */
+.card{
+    margin-bottom: 2rem;
 }
 
 /* Other */
