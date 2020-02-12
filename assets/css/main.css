@@ -116,7 +116,7 @@ a, a:hover, a:focus {
 /* Sidebar Collapse Button */
 
 button.toggler{
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
     margin: 0 0.2rem 0.2rem 0.2rem;
@@ -142,6 +142,9 @@ button.toggler{
 }
 
 /* Content */
+#content{
+    width: 100%;
+}
 
 /* Other */
 
