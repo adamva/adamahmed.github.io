@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,600&display=swap');
 
 /* Basic */
-
 html, body{
     font-family: 'Quicksand', sans-serif;
     background: #fafafa;
@@ -27,7 +26,6 @@ hr{
 }
 
 /* Sidebar */
-
 #sidebar{
     min-width: 20rem;
     height: 100vh;
@@ -105,19 +103,18 @@ hr{
     margin: 0 1rem;
 }
 
-#sidebar .sidebar-footer{
+footer.icons{
     display: flex;
     justify-content: space-evenly;
     margin-top: auto;
     margin-bottom: 3rem;
     font-size: 2rem;
 }
-#sidebar .sidebar-footer a:hover{
+footer.icons a:hover{
     color: #afe4e1;
 }
 
 /* Sidebar Collapse Button */
-
 button.toggler{
     position: fixed;
     top: 0;
@@ -173,15 +170,15 @@ section header .tag{
     margin-bottom: auto;
 }
 
-/* Section Intro */
-section#intro .jumbotron{
+/* Section Intro Jumbotron */
+.jumbotron{
     background: #31A7A0;
     background: linear-gradient(to left, #31A7A0, #bdfff3);
     color: white;
     margin: 0;
 }
 
-section#intro .container.header{
+.jumbotron .container.header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,22 +186,22 @@ section#intro .container.header{
     text-shadow: rgba(34, 38, 41, 0.349) 1px 1px;
     font-size: 1.7rem;
 }
-section#intro .container.header h1{
+.jumbotron .container.header h1{
     font-size: 3rem;
 }
 
-section#intro .container.header hr{
+.jumbotron .container.header hr{
     width: 60%;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgb(255, 255, 255), rgba(255, 255, 255, 0.3));
 }
 
-section#intro footer{
+.jumbotron .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
 }
-section#intro footer a{
+.jumbotron .footer a.button{
     background-color: rgb(95, 228, 214);
     border-radius: 10px;
     padding: 15px;
@@ -212,11 +209,11 @@ section#intro footer a{
     box-shadow: rgba(0, 0, 0, 0.24) 1px 2px;
 }
 
-section#intro footer a:active{
+.jumbotron .footer a:active{
     background-color: rgb(94, 219, 207);
     box-shadow: rgba(0, 0, 0, 0.24) 1px 2px inset;
 }
-section#intro footer .main{    
+.jumbotron .footer .main{    
     margin-bottom: 1rem;
     width: 14rem;
     text-align: center;
@@ -242,6 +239,46 @@ section#intro footer .main{
     align-items: center;
 }
 
+/* Section About */
+.card .card-body .card-text{
+    text-align: center;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+/* Section Contact */
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 15rem;
+}
+
+.contact-info header{
+    margin-top: 2rem;
+    height: fit-content;
+}
+
+.contact-info footer{
+    width: 100%;
+    padding: 0 20rem;
+}
+
+/* Section Footer */
+footer.page-footer{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(139, 139, 139);
+    border-top: white solid 1px;
+    height: 3rem;
+}
+
+footer.page-footer h5{
+    margin: 0;
+}
 /* Other */
 
 .spacer{
