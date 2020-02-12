@@ -31,16 +31,14 @@ a, a:hover, a:focus {
     display: flex;
     flex-direction: column;
     background: #222629;
-    color: #fff;
+    color: #545f64;
     transition: all 0.3s;
 }
 
-#sidebar i{
-    color: #40484C;
-}
 #sidebar .sidebar-header{
     padding: 20px;
     background: #181b1d;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +50,7 @@ a, a:hover, a:focus {
     border-radius: 0.5rem;
 }
 
-#sidebar .sidebar-header h3{
+#sidebar .sidebar-header h5{
     margin: 0;
     height: fit-content;
 }
@@ -63,17 +61,30 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li{
-    height: 3rem;
+    height: 4rem;
 }
 
-#sidebar ul li a:hover{
+#sidebar ul li:hover{
     background-color: #1D2023;
+    color: white;
 }
 
-a.active{
+#sidebar ul li:hover i{
+    color: #afe4e1;
+}
+
+#sidebar a.active{
     background-color: #1D2023;
+    color: white;
 }
 
+#sidebar a.active i{
+    color: #afe4e1;
+}
+
+#sidebar i:hover{
+   color: #afe4e1;
+}
 
 #sidebar ul li a {
     display: flex;
@@ -89,8 +100,10 @@ a.active{
 }
 
 #sidebar hr{
-    background-color: white;
-    margin: 0 5rem;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(84, 95, 100, 0), rgb(84, 95, 100), rgba(84, 95, 100, 0));
+    margin: 0 1rem;
 }
 
 #sidebar .sidebar-footer{
@@ -99,6 +112,9 @@ a.active{
     margin-top: auto;
     margin-bottom: 3rem;
     font-size: 2rem;
+}
+#sidebar .sidebar-footer i{
+    transition: 0.3s;
 }
 
 /* Sidebar Collapse Button */
@@ -130,7 +146,8 @@ button.toggler{
 }
 
 /* Other */
+
 .spacer{
     width: 100%;
-    height: 20rem;
+    height: 50rem;
 }
