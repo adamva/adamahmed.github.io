@@ -19,74 +19,59 @@
                 <!-- Sidebar -->
                 <nav id="sidebar">
                     <div class="sidebar-header">
-                        <h3>Adam A Sidebar</h3>
+                        <img id="profilePic" src="/assets/images/header profile pic.jpg" alt="profile pic"><h3>Adam Ahmed</h3>
                     </div>
 
                     <ul class="list-unstyled components">
-                        <p>Heading</p>
-                        <li class="active">
-                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Home</a>
-                            <ul class="collapse show list-unstyled" id="homeSubmenu">
-                                <li>
-                                    <a href="#">Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#">Link 3</a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a class="section active" href="#intro"><i class="fas fa-home"></i>Intro</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a class="section" href="#portfolio"><i class="fas fa-th-large"></i>Portfolio</a>
                         </li>
                         <li>
-                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Pages</a>
-                            <ul class="collapse show list-unstyled" id="pageSubmenu">
-                                <li>
-                                    <a href="#">Link 4</a>
-                                </li>
-                                <li>
-                                    <a href="#">Link 5</a>
-                                </li>
-                                <li>
-                                    <a href="#">Link 6</a>
-                                </li>
-                            </ul>
-                        </li>
+                            <a class="section" href="#about"><i class="fas fa-user"></i>About</a>
+                        </li>                        
                         <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
+                            <a class="section" href="#contact"><i class="fas fa-envelope"></i>Contact</a>
                         </li>
                     </ul>
+                    <hr>
+                    <div class="sidebar-footer">
+                        <i class="fab fa-github"></i><i class="fab fa-linkedin"></i><i class="fas fa-envelope "></i>
+                    </div>
                 </nav>
 
                 <!-- Page Content -->
                 <div id="content">
-                    <nav class="navbar">
-                        <div class="container-fluid">
-
-                            <button id="sidebarCollapse" class="toggler">
-                                <i class="fas fa-bars"></i>
-                            </button>
-
+                    <button id="sidebarCollapse" class="toggler">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <section id="intro">
+                        <div class="spacer">
+                            <h3>Intro</h3>
                         </div>
-                    </nav>
-                    <div class="spacer">
-                        <h3>Section</h3>
-                    </div>
-                    <div class="spacer">
-                        <h3>Section</h3>
-                    </div>
-                    <div class="spacer">
-                        <h3>Section</h3>
-                    </div>
-                    <div class="spacer">
-                        <h3>Section</h3>
-                    </div>
+                    </section>
+                    <section id="portfolio">
+                        <div class="spacer">
+                            <h3>portfolio</h3>
+                        </div>
+                    </section>
+                    <section id="about">
+                        <div class="spacer">
+                            <h3>about</h3>
+                        </div>
+                    </section>
+                    <section id="contact">
+                        <div class="spacer">
+                            <h3>contact</h3>
+                        </div>
+                    </section>
+                    <footer>
+                        <div class="spacer">
+                            <h3>Footer</h3>
+                        </div>
+                    </footer>
                 </div>
             </div>
 

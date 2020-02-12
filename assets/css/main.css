@@ -1,10 +1,12 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap');
+
 /* Basic */
 
-body{
+html, body{
     font-family: 'Quicksand', sans-serif;
     background: #fafafa;
+    scroll-behavior: smooth;
 }
 
 a, a:hover, a:focus {
@@ -26,59 +28,86 @@ a, a:hover, a:focus {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: #7386D5;
+    display: flex;
+    flex-direction: column;
+    background: #222629;
     color: #fff;
     transition: all 0.3s;
 }
 
+#sidebar i{
+    color: #40484C;
+}
 #sidebar .sidebar-header{
     padding: 20px;
-    background: #6d7fcc;
+    background: #181b1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sidebar .sidebar-header img#profilePic{
+    width: 50px;
+    height: 50px;
+    border-radius: 0.5rem;
+}
+
+#sidebar .sidebar-header h3{
+    margin: 0;
+    height: fit-content;
 }
 
 #sidebar ul.components{
+    margin: 0;
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
 }
 
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
+#sidebar ul li{
+    height: 3rem;
 }
+
+#sidebar ul li a:hover{
+    background-color: #1D2023;
+}
+
+a.active{
+    background-color: #1D2023;
+}
+
 
 #sidebar ul li a {
-    padding: 10px;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
     font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
-}
-
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
 }
 
 #sidebar.hidden{
     margin-left: -20rem;
 }
 
-/* Sidebar Collapse Button */
-.navbar, .navbar > .container-fluid{
-    padding: 0;
+#sidebar hr{
+    background-color: white;
+    margin: 0 5rem;
 }
 
+#sidebar .sidebar-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+/* Sidebar Collapse Button */
+
 button.toggler{
-    margin: .2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 0 0.2rem 0.2rem 0.2rem;
     border: none;
     border-radius: 5px;
     padding: 0 1rem;
@@ -102,6 +131,6 @@ button.toggler{
 
 /* Other */
 .spacer{
-    width: 100vw;
+    width: 100%;
     height: 20rem;
 }
