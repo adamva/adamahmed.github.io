@@ -82,10 +82,6 @@ a, a:hover, a:focus {
     color: #afe4e1;
 }
 
-#sidebar i:hover{
-   color: #afe4e1;
-}
-
 #sidebar ul li a {
     display: flex;
     height: inherit;
@@ -113,8 +109,8 @@ a, a:hover, a:focus {
     margin-bottom: 3rem;
     font-size: 2rem;
 }
-#sidebar .sidebar-footer i{
-    transition: 0.3s;
+#sidebar .sidebar-footer a:hover{
+    color: #afe4e1;
 }
 
 /* Sidebar Collapse Button */

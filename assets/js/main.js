@@ -9,6 +9,7 @@ $(document).ready(() => {
         toggleActiveSection(sections, this);
     });
 
+    //Activate correct section in sidebar on scroll
     $(window).on('resize scroll', function() {
         if($('section#intro').isInViewport()){
             toggleActiveSection(sections, $('a#intro-link'));
@@ -29,6 +30,8 @@ function toggleActiveSection(links, activeLink) {
     $(activeLink).addClass('active');
 }
 
+
+//Check if element is halfway inside the view port
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
     var elementMiddle = elementTop + Math.floor($(this).outerHeight() / 2);
