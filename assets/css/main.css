@@ -205,6 +205,7 @@ section header .tag{
     background-color: rgb(95, 228, 214);
     border-radius: 10px;
     padding: 15px;
+    font-size: 1.3rem;
     text-shadow: rgba(0, 0, 0, 0.192) 1px 1px;
     box-shadow: rgba(0, 0, 0, 0.24) 1px 2px;
 }
@@ -241,7 +242,7 @@ section header .tag{
 
 /* Section About */
 .card .card-body .card-text{
-    text-align: center;
+    text-align: left;
     line-height: 2;
     font-size: 1.2rem;
 }
