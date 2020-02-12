@@ -225,6 +225,7 @@ section#intro footer .main{
 /* Section Portfolio */
 .card{
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .card .card-heading{
@@ -233,6 +234,12 @@ section#intro footer .main{
 .card a span{
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
+}
+
+.card .card-body.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Other */
