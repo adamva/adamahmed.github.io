@@ -227,6 +227,10 @@ section#intro footer .main{
     margin-bottom: 2rem;
 }
 
+.card .card-heading{
+    text-align: center;
+}
+
 /* Other */
 
 .spacer{
