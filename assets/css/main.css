@@ -248,11 +248,15 @@ section header .tag{
 }
 
 /* Section Contact */
+section#contact{
+    height: 30rem;
+}
 .contact-info{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    height: 100%;
     padding: 0 15rem;
 }
 
@@ -261,9 +265,15 @@ section header .tag{
     height: fit-content;
 }
 
-.contact-info footer{
-    width: 100%;
-    padding: 0 20rem;
+.contact-info .footer{
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    font-size: 5rem;
+}
+
+.contact-info .footer a:hover{
+    color: #afe4e1;
 }
 
 /* Section Footer */
