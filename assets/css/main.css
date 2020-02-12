@@ -158,10 +158,12 @@ section#intro .container.header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-shadow: rgba(34, 38, 41, 0.349) 1px 1px;
+    font-size: 1.7rem;
 }
-section#intro .container.header p{
-    margin: 0;
+.container.header h1{
+    font-size: 3rem;
 }
 
 .container.header hr{
@@ -176,16 +178,21 @@ section#intro footer{
     padding-top: 1rem;
 }
 section#intro footer a{
-    background-color: rgb(112, 241, 229);
+    background-color: rgb(95, 228, 214);
     border-radius: 10px;
     padding: 15px;
     text-shadow: rgba(0, 0, 0, 0.192) 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 2px;
 }
-section#intro footer a:hover{
-    background-color: rgb(36, 243, 222);
+
+section#intro footer a:active{
+    background-color: rgb(94, 219, 207);
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 2px inset;
 }
 section#intro footer .main{    
     margin-bottom: 1rem;
+    width: 14rem;
+    text-align: center;
 }
 section#intro footer .sub{
 }
