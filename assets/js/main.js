@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('a.section');
+const sections = document.querySelectorAll('li a');
 $(document).ready(() => {
 
     //Hide and show the sidebar

@@ -39,7 +39,7 @@ hr{
     transition: all 0.3s;
 }
 
-#sidebar .sidebar-header{
+.sidebar-header{
     padding: 20px;
     background: #181b1d;
     color: white;
@@ -48,45 +48,37 @@ hr{
     align-items: center;
 }
 
-#sidebar .sidebar-header img#profilePic{
+.profilePic{
     width: 50px;
     height: 50px;
-    border-radius: 0.5rem;
+    border: 2px solid #dee2e6;;
 }
 
-#sidebar .sidebar-header h5{
-    margin: 0;
-    height: fit-content;
-}
-
-#sidebar ul.components{
-    margin: 0;
-    padding: 20px 0;
-}
-
-#sidebar ul li{
+li.list-group-item{
     height: 4rem;
+    border: 0;
+    background-color: inherit;
 }
 
-#sidebar ul li:hover{
+li.list-group-item:hover{
     background-color: #1D2023;
     color: white;
 }
 
-#sidebar ul li:hover i{
+li.list-group-item:hover i{
     color: #afe4e1;
 }
 
-#sidebar a.active{
+li.list-group-item a.active{
     background-color: #1D2023;
     color: white;
 }
 
-#sidebar a.active i{
+li.list-group-item a.active i{
     color: #afe4e1;
 }
 
-#sidebar ul li a {
+li.list-group-item a {
     display: flex;
     height: inherit;
     justify-content: space-between;
@@ -99,17 +91,13 @@ hr{
     margin-left: -20rem;
 }
 
-#sidebar hr{
-    margin: 0 1rem;
-}
-
 footer.icons{
     display: flex;
     justify-content: space-evenly;
-    margin-top: auto;
     margin-bottom: 3rem;
     font-size: 2rem;
 }
+
 footer.icons a:hover{
     color: #afe4e1;
 }
