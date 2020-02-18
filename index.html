@@ -1,204 +1,205 @@
 <!doctype html>
 <html lang='en'>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<head>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
-        <!-- Bootstrap CSS -->
-        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
 
-        <link rel="stylesheet" href="assets/css/main.css"/>
-        <title>Adam A Portfolio</title>
-    </head>
-        <body>
-            <div class="wrapper">
-                <!-- Sidebar -->
-                <nav id="sidebar">
-                    <div class="sidebar-header">
-                        <img id="profilePic" src="./assets/images/header profile pic.jpg" alt="profile pic"><h5>Adam Ahmed</h3>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <title>Adam A Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img id="profilePic" src="./assets/images/header profile pic.jpg" alt="profile pic"><h5>Adam Ahmed</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a id="intro-link" class="section active" href="#intro"><i class="fas fa-home"></i>Intro</a>
+                </li>
+                <li>
+                    <a id="portfolio-link" class="section" href="#portfolio"><i class="fas fa-th-large"></i>Portfolio</a>
+                </li>
+                <li>
+                    <a id="about-link" class="section" href="#about"><i class="fas fa-user"></i>About</a>
+                </li>                        
+                <li>
+                    <a id="contact-link" class="section" href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+                </li>
+            </ul>
+            <hr>
+            <footer class="icons">
+                <a href="https://github.com/adamva" class="icon fab fa-github"></a>
+                <a href="https://www.linkedin.com/in/adam-ahmed/" class="icon fab fa-linkedin"></a>
+                <a href="mailto:adamva@outlook.com" class="icon fas fa-envelope"></a>
+            </footer>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <button id="sidebarCollapse" class="toggler">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Introductions -->
+            <section id="intro">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container header">
+                        <h1>Hi! I'm Adam</h1>
+                        <p>
+                            I'm a student at the University of Alberta.
+                        </p>
+                        <hr>
+                        <p>
+                            I'm a jr. developer looking to learn new skills and jumpstart my career.
+                        </p>
+                        <p>
+                            This site is to showcase the work and projects I have done.
+                        </p>                                                               
                     </div>
-
-                    <ul class="list-unstyled components">
-                        <li>
-                            <a id="intro-link" class="section active" href="#intro"><i class="fas fa-home"></i>Intro</a>
-                        </li>
-                        <li>
-                            <a id="portfolio-link" class="section" href="#portfolio"><i class="fas fa-th-large"></i>Portfolio</a>
-                        </li>
-                        <li>
-                            <a id="about-link" class="section" href="#about"><i class="fas fa-user"></i>About</a>
-                        </li>                        
-                        <li>
-                            <a id="contact-link" class="section" href="#contact"><i class="fas fa-envelope"></i>Contact</a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <footer class="icons">
+                    <div class="footer">
+                        <a href="#portfolio" class="button main">Check Out My Work</a>
+                        <a href="./assets/resume/AdamAhmedResume.pdf" class="button sub">View Resume</a>
+                    </div> 
+                </div>
+            </section>
+            <!-- Portfolio -->
+            <section id="portfolio">
+                <header>
+                    <h1 class="heading">Portfolio</h1>
+                    <p class="tag">
+                        These are the projects I have done. You can view live demos of the projects or checkout the code on Github.
+                    </p>
+                </header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Portfolio Website Card -->                          
+                        <div class="col-12 col-md-6 col-xl-4">                                    
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/images/Portfolio Website Thumbnail.jpg" alt="Portfolio img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio Website</h5>
+                                    <p class="card-text">This website is designed by myself and is hosted on Github.</p>
+                                    <p class="card-text">An issue I ran into is that Bootstrap does not have a good sidebar template.</p>
+                                    <p class="card-text">So, I created a sidebar from scratch using CSS and media queries.</p>
+                                </div>
+                                <h5 class="card-heading">What I used</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">HTML, CSS, and JavaScript</li>
+                                    <li class="list-group-item">jQuery</li>
+                                    <li class="list-group-item">FontAwesome (for amazing icons)</li>
+                                </ul>
+                                <div class="card-body footer">
+                                    <a href="https://adamva.github.io/adamahmed.github.io/" class="card-link">Live... But you're here?</a>
+                                    <a href="https://github.com/adamva/adamahmed.github.io" class="card-link fas fa-code"><span> Code</span></a>
+                                </div>
+                                </div>
+                        </div>
+                        <!-- YelpCamp Card -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/images/YelpCamp Thumbnail.jpg" alt="YelpCamp img">
+                                <div class="card-body">
+                                    <h5 class="card-title">YelpCamp</h5>
+                                    <p class="card-text">This is a site created with the course <em>'The Web Developer Bootcamp,'</em> by Colt Steele.</p>
+                                    <p class="card-text">I used features from Node.js, BS4, MongoDB Atlas, to the Google APIs.</p>
+                                </div>
+                                <h5 class="card-heading">What I used</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Node.js and Express with RESTful routing</li>
+                                    <li class="list-group-item">Mongoose and MongoDB Atlas with CRUD principles</li>
+                                    <li class="list-group-item">Google Geocoding and JavaScript Maps APIs</li>
+                                    <li class="list-group-item">Authentication was done through Passport.js</li>
+                                </ul>
+                                    <div class="card-body footer">
+                                        <a href="https://yelpcamp-97671.herokuapp.com/" class="card-link">Live</a>
+                                        <a href="https://github.com/adamva/YelpCamp" class="card-link fas fa-code"><span> Code</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Shapes Card -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/images/Shapes Thumbnail.jpg" alt="YelpCamp img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shapes</h5>
+                                    <p class="card-text">This site is a simple playground that lets you place and color different shapes.</p>
+                                    <p class="card-text">To allow for custom colors, I had to make pickr.js and paper.js communicate with each other.</p>
+                                    <p class="card-text">I dug through the documentation of both libraries to find appropriate methods that would let me connect them.</p>
+                                </div>
+                                <h5 class="card-heading">What I used</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Paper.js</li>
+                                    <li class="list-group-item">Pickr.js</li>
+                                </ul>
+                                    <div class="card-body footer">
+                                        <a href="https://adamva.github.io/shapes.github.io/" class="card-link">Live</a>
+                                        <a href="https://github.com/adamva/shapes.github.io" class="card-link fas fa-code"><span> Code</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <header>
+                    <h1 class="heading">About Me</h1>
+                </header>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-10">
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/images/about.jpg" alt="YelpCamp img">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            I have currently completed all requirements for my Major, being Computer Science, and I am now finishing up the remainder of my degree.
+                                            I am a huge gamer and I have played games from <em>Call of Duty, Subnautica, to Stardew Valley.</em> My top games, however, would be the <em>Destiny</em> franchise by Bungie.
+                                            My cat has been with me for nearly 4 years now and is the greatest furball you will ever meet.
+                                            My favorite pastime is watching anime and reading manga. I love the absolutely ridiculous scenarios they pitch and the crazy character designs (have you seen <em>My Hero Academia</em>).
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="contact-info">
+                    <header>
+                        <h1>Contact</h1>
+                    </header>
+                    <h4>adamva@outlook.com</h4>             
+                    <div class="icons footer">
                         <a href="https://github.com/adamva" class="icon fab fa-github"></a>
                         <a href="https://www.linkedin.com/in/adam-ahmed/" class="icon fab fa-linkedin"></a>
                         <a href="mailto:adamva@outlook.com" class="icon fas fa-envelope"></a>
-                    </footer>
-                </nav>
-
-                <!-- Page Content -->
-                <div id="content">
-                    <button id="sidebarCollapse" class="toggler">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <!-- Introductions -->
-                    <section id="intro">
-                        <div class="jumbotron jumbotron-fluid">
-                            <div class="container header">
-                                <h1>Hi! I'm Adam</h1>
-                                <p>
-                                    I'm a student at the University of Alberta.
-                                </p>
-                                <hr>
-                                <p>
-                                    I'm an jr. developer looking to learn new skills and jumpstart my career.
-                                </p>
-                                <p>
-                                    This site is to showcase the work and projects I have done.
-                                </p>                                                               
-                            </div>
-                            <div class="footer">
-                                <a href="#portfolio" class="button main">Check Out My Work</a>
-                                <a href="./assets/resume/AdamAhmedResume.pdf" class="button sub">View Resume</a>
-                            </div> 
-                        </div>
-                    </section>
-                    <!-- Portfolio -->
-                    <section id="portfolio">
-                        <header>
-                            <h1 class="heading">Portfolio</h1>
-                            <p class="tag">
-                                These are the projects I have done. You can view live demos of the projects or checkout the code on github.
-                            </p>
-                        </header>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <!-- Portfolio Website Card -->                          
-                                <div class="col-12 col-md-6 col-xl-4">                                    
-                                    <div class="card">
-                                        <img class="card-img-top" src="./assets/images/Portfolio Website Thumbnail.jpg" alt="Portfolio img">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Portfolio Website</h5>
-                                            <p class="card-text">This website was designed by myself and is hosted on github.</p>
-                                            <p class="card-text">An issue I ran into was that Bootstrap does not have a good sidebar template.</p>
-                                            <p class="card-text">So, I created a sidebar from scratch using CSS and media queries.</p>
-                                        </div>
-                                        <h5 class="card-heading">What I used</h5>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">HTML, CSS, and JavaScript</li>
-                                            <li class="list-group-item">jQuery</li>
-                                            <li class="list-group-item">FontAwesome (for awesome icons)</li>
-                                        </ul>
-                                        <div class="card-body footer">
-                                            <a href="https://adamva.github.io/adamahmed.github.io/" class="card-link">Live... But you're here?</a>
-                                            <a href="https://github.com/adamva/adamahmed.github.io" class="card-link fas fa-code"><span> Code</span></a>
-                                        </div>
-                                      </div>
-                                </div>
-                                <!-- YelpCamp Card -->
-                                <div class="col-12 col-md-6 col-xl-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="./assets/images/YelpCamp Thumbnail.jpg" alt="YelpCamp img">
-                                        <div class="card-body">
-                                            <h5 class="card-title">YelpCamp</h5>
-                                            <p class="card-text">This is a site created with the course <em>'The Web Developer Bootcamp,'</em> by Colt Steele.</p>
-                                            <p class="card-text">I used features from Node.js, BS4, to MongoDB Atlas.</p>
-                                        </div>
-                                        <h5 class="card-heading">What I used</h5>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Node.js and Express with RESTful routing</li>
-                                            <li class="list-group-item">Mongoose and MongoDB Atlas with CRUD principles</li>
-                                            <li class="list-group-item">Authentication was done through Passport.js</li>
-                                        </ul>
-                                            <div class="card-body footer">
-                                                <a href="https://yelpcamp-97671.herokuapp.com/" class="card-link">Live</a>
-                                                <a href="https://github.com/adamva/YelpCamp" class="card-link fas fa-code"><span> Code</span></a>
-                                            </div>
-                                      </div>
-                                </div>
-                                <!-- Shapes Card -->
-                                <div class="col-12 col-md-6 col-xl-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="./assets/images/Shapes Thumbnail.jpg" alt="YelpCamp img">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Shapes</h5>
-                                            <p class="card-text">This site is a simple playground that lets you place and color different shapes.</p>
-                                            <p class="card-text">I had to figure out how to make pickr.js and paper.js communicate with each other.</p>
-                                            <p class="card-text">I dug through the documentation of both libraries to find appropriate methods that would let me connect them together.</p>
-                                        </div>
-                                        <h5 class="card-heading">What I used</h5>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Paper.js</li>
-                                            <li class="list-group-item">Pickr.js</li>
-                                        </ul>
-                                            <div class="card-body footer">
-                                                <a href="https://adamva.github.io/shapes.github.io/" class="card-link">Live</a>
-                                                <a href="https://github.com/adamva/shapes.github.io" class="card-link fas fa-code"><span> Code</span></a>
-                                            </div>
-                                      </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="about">
-                        <header>
-                            <h1 class="heading">About Me</h1>
-                        </header>
-                        <div class="container-fluid">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-sm-10">
-                                    <div class="card">
-                                        <img class="card-img-top" src="./assets/images/about.jpg" alt="YelpCamp img">
-                                            <div class="card-body">
-                                                <p class="card-text">
-                                                    I have currently completed all of my requirements for my Major, being Computer Science, and I am now finishing up the remainder of my degree.
-                                                    I am huge gamer and I have played games from <em>Call of Duty, Subnautica, to Stardew Valley.</em> My top games, however, would be the <em>Destiny</em> franchise by Bungie.
-                                                    My cat has been with me for nearly 4 years now and is the greatest furball you will ever meet.
-                                                    My favortie pastime is watching anime and reading manga. I love the absolute ridiculous senarios they pitch and the crazy character designs (have you seen <em>My Hero Academia</em>).
-                                                </p>
-                                            </div>
-                                      </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="contact">
-                        <div class="contact-info">
-                            <header>
-                                <h1>Contact</h1>
-                            </header>
-                            <h4>adamva@outlook.com</h4>             
-                            <div class="icons footer">
-                                <a href="https://github.com/adamva" class="icon fab fa-github"></a>
-                                <a href="https://www.linkedin.com/in/adam-ahmed/" class="icon fab fa-linkedin"></a>
-                                <a href="mailto:adamva@outlook.com" class="icon fas fa-envelope"></a>
-                            </div> 
-                        </div>
-                    </section>
-                    <footer class="page-footer">
-                        <h5>Thanks for stopping by!</h5>
-                    </footer> 
+                    </div> 
                 </div>
-            </div>
+            </section>
+            <footer class="page-footer">
+                <h5>Thanks for stopping by!</h5>
+            </footer> 
+        </div>
+    </div>
 
 
 
 
-            
-            <!-- Optional JavaScript -->
-            <!-- jQuery -->
-            <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
-            <!-- Popper.js -->
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
-            <!-- Bootstrap JS -->
-            <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
-            <!-- Font Awesome -->
-            <script src="https://kit.fontawesome.com/f005ebedaf.js" crossorigin="anonymous"></script>
-		    <script src="assets/js/main.js"></script>
-        </body>
-    </html>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+    <!-- Popper.js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f005ebedaf.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

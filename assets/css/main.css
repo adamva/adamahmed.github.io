@@ -173,7 +173,7 @@ section header .tag{
 /* Section Intro Jumbotron */
 .jumbotron{
     background: #31A7A0;
-    background: linear-gradient(to left, #31A7A0, #bdfff3);
+    background: linear-gradient(to left, rgb(71, 165, 159), #bdfff3);
     color: white;
     margin: 0;
 }
